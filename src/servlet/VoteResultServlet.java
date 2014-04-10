@@ -191,7 +191,7 @@ public class VoteResultServlet extends HttpServlet {
 		pw.println("<link href=\"stylesheets/main.css\" rel=\"stylesheet\">");
 		pw.println("<link rel=\"shortcut icon\" href=\"images/favicon.png\">");
 
-		pw.println("<script type=\"text/javascript\" src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyCmkkqJj389oWXZq1PgwiXix4aHjqwyjMs&sensor=true\"></script>");
+		pw.println("<script type=\"text/javascript\" src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyCmkkqJj389oWXZq1PgwiXix4aHjqwyjMs&sensor=true&language=en\"></script>");
 
 		pw.println("<style type=\"text/css\">");
 		pw.println("body {padding-top: 60px; padding-bottom: 40px;}");

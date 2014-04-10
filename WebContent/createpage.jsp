@@ -12,7 +12,7 @@
         <script src="javascripts/bootstrap.js" type="text/javascript"></script>
         <script src="javascripts/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
         <script type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmkkqJj389oWXZq1PgwiXix4aHjqwyjMs&sensor=true">
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmkkqJj389oWXZq1PgwiXix4aHjqwyjMs&sensor=true&language=en">
         </script>
         <style type="text/css">
             html { height: 100% }
