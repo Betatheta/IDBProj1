@@ -94,7 +94,7 @@ public class VoteServlet extends HttpServlet {
 			pw.println("markers[ind].setAnimation(null);");
 			pw.println("} else markers[ind].setAnimation(google.maps.Animation.BOUNCE);}");
 			pw.println("function onClick(){");
-			pw.println("$('#decbtn').prop('disabled', false);");
+			pw.println("$('#votebtn').prop('disabled', false);");
 			pw.println("};");
 			pw.println("google.maps.event.addDomListener(window, 'load', initialize);");
 			pw.println("</script></head>");
