@@ -108,7 +108,7 @@ public class VoteResultServlet extends HttpServlet {
 			pw.println("<button type=\"button\" class=\"btn btn-navbar\" data-toggle=\"collapse\" data-target=\".nav-collapse\">");
 			pw.println("<span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span>");
 			pw.println("</button>");
-			pw.println("<a class=\"brand\" href=\"#\"><span>Plan</span>gout</a>");
+			pw.println("<a class=\"brand\" href=\"main?facebookId="+facebookId+"\"><span>Plan</span>gout</a>");
 			pw.println("<div class=\"nav-collapse collapse\">");
 			pw.println("<ul class=\"nav\"></ul>");
 			pw.println("<ul class=\"nav pull-right\">");
@@ -139,6 +139,7 @@ public class VoteResultServlet extends HttpServlet {
 				Plan p = planList.get(i);
 				String location = p.location;
 				String time = p.activity_time;
+				time = time.substring(0,time.length()-5);
 				int i_comma = location.indexOf(',');
 				String Lat = location.substring(0, i_comma);
 				int i_colon = location.indexOf(':');
@@ -149,7 +150,7 @@ public class VoteResultServlet extends HttpServlet {
 						+ ")\"><label><span class=\"badge\">" + p.vote
 						+ "</span>");
 				if (pId == p.pid)
-					pw.println("<font color=\"000000\">"  + time+" : "+ address
+					pw.println("<font color=\"000000\">"  + time+" @ "+ address
 							+ "</font></label></a></li>");
 				else
 					pw.println( time+" : "+address + "</label></a></li>");

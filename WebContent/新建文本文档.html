@@ -1,5 +1,5 @@
-<%@page contentType="text/html;charset=GB2312" %> 
-<%@page import="java.util.*" %> 
+ 
+ 
 
 <html>
     <head>
@@ -141,7 +141,7 @@
                     alert("Title cannot be empty!");
                     return; }
                 if (document.getElementById('title').length>255) {
-                    alert("Title is too long!"); }
+                    alert("Too long title!"); }
                 if (document.getElementById('detail').value==null || document.getElementById('detail').value=="") {
                     alert("Detail cannot be empty!");
                     return; } 
@@ -167,7 +167,7 @@
 					
              	var myDate = new Date();
 
-             	document.getElementById('organizerFacebookId').value = "<%=request.getParameter("facebookId") %>";
+             	document.getElementById('organizerFacebookId').value = "100007048051297";
                                          
              	var event_name = document.getElementById('title').value;
              	FB.ui({method:'apprequests',
@@ -179,7 +179,7 @@
         </script>
 
         <meta charset="utf-8">
-            <title>Plangout | Create a New Event</title>
+            <title>Plangout | Create New Event</title>
    </head>
     
     <body>
@@ -194,7 +194,7 @@
                     <a class="brand" href="#">Plangout</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right">
-                            <li><a href="#" id="user" ><%=request.getParameter("userName") %></a></li>
+                            <li><a href="#" id="user" >Gigi Young</a></li>
                             <li><button class="btn" onclick="logout()">Logout</button></li>
                         </ul>
                     </div>
@@ -228,14 +228,14 @@
                     <script type="text/javascript">
                         var date = new Date();
 						
-                        //date.setDate(date.getUTCDate());
+                        date.setDate(date.getUTCDate());
                         var timepicker = $(".form_datetime");
 
                         timepicker.datetimepicker({
                                                            format: "yyyy-mm-dd hh:ii",
                                                            autoclose: true,
                                                            todayBtn: false,
-                                                           startDate: date,
+                                                           startDate: date-1,
                                                            minuteStep: 10,
                                                            linkField: "mirror_field",
                                                            linkFormat: "yyyy-mm-dd hh:ii"

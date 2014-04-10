@@ -242,7 +242,7 @@ public class MainServlet extends HttpServlet {
 		pw.println("<span class=\"icon-bar\"></span>");
 		pw.println("<span class=\"icon-bar\"></span>");
 		pw.println("</button>");
-		pw.println("<a class=\"brand\" href=\"main\"><span>Plan</span>gout</a>");
+		pw.println("<a class=\"brand\" href=\"#\"><span>Plan</span>gout</a>");
 		pw.println("<div class=\"nav-collapse collapse\">");
 		pw.println("<ul class=\"nav pull-right\">");
 
@@ -255,8 +255,8 @@ public class MainServlet extends HttpServlet {
 		pw.println("<div class=\"span9\">");
 		pw.println("<div class=\"hero-unit\">");
 		pw.println("<h2>Welcom to Plangout!</h2>");
-		pw.println("<p>Here you can create events and invite your friends.</p>");
-		pw.println("<a name=\"organizer1\">here I am!</a>");
+		pw.println("<p>Here you can CREATE events and INVITE your friends.</p>");
+		pw.println("<p>And VOTE for event plans!</p>");
 
 		pw.println("</div><!--/.hero -->");
 		pw.println("</div><!--/span9-->");
