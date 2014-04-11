@@ -134,7 +134,7 @@
 			
 			function deleteTime(timex) {
 			    document.getElementById('time' + timex).style.display = "none";
-			    delete times[timex]; timenum--;
+			    delete times[timex]; 
 			    }
 
             function invite() {
