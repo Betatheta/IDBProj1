@@ -134,7 +134,8 @@
 			
 			function deleteTime(timex) {
 			    document.getElementById('time' + timex).style.display = "none";
-			    delete times[timex]; }
+			    delete times[timex]; timenum--;
+			    }
 
             function invite() {
                 if (document.getElementById('title').value==null || document.getElementById('title').value=="") {
@@ -154,13 +155,15 @@
                     alert("Locations cannot be empty!");
                     return; } 
                 document.getElementById('timeString').value = "";
+                var valid_time_num=0;
                 for (var i=0; i < timenum; i=i+1) {
                     if (typeof times[i] != 'undefined') {
+                    	valid_time_num++;
                         document.getElementById('timeString').value += times[i] + "!"; } }
                 if (document.getElementById('timeString').value==null || document.getElementById('timeString').value=="") {
                     alert("Times cannot be empty!"); return;}
                 
-				if (timenum!=locationnum) {
+				if (valid_time_num!=locationnum) {
 					alert("The numbers of times and locations don't match!");
 					return;
 					}
